@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Todays Events</title>
+		<link href="jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css" />
+		<script src="scripts/jquery-2.1.0.min.js"></script>
+		<script src="scripts/jquery-1.5.min.js" type="text/javascript"></script>
+		<script src="scripts/BVInfo.js"></script>
+		<script src="scripts/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+		<script src="/phonegap.js" type="text/javascript"></script>
+		<script type="text/javascript" charset="utf-8" src="scripts/cordova-2.7.0.js"></script>
+		<script  src="scripts/jquery.mobile.scrollview.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    	<script type="text/javascript" src="FeedEk.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script  src="scripts/rssloader.js" type="text/javascript"></script>		
+		<script  src="scripts/jquery.mobile.scrollview.js" type="text/javascript"></script>	
+		<link href="css/BVInfo.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript">
+    
+	    $(window).scroll(function() {
+	        $('#launhead').css('left', $(this).scrollLeft() + "px");
+	    });
+	     $(window).scroll(function() {
+	        $('#launfoot').css('left', $(this).scrollLeft() + "px");
+	    });    
+	</script>
+</head>
+<body>
+	<!-- Home page Hello-->
+	<div data-role="page" data-scroll="true" id="home">
+		<div data-role="header" data-position="fixed" class="theme">
+			<a href="#left-panel" class="box-shadow-menu" data-corners="false" data-iconpos="notext">Menu</a>
+			<h1>Buena Vista University</h1>
+		</div>
+		
+		<div data-role="content"  class="rssContent">
+			
+			<header id="mainHeader">Today's News</header>
+				
+			<div class="main-container" ></div>	
+		</div>	
+	</div>
+	
+	<div data-role="page" id="left-panel">
+		<div >
+			 <div data-role="header" data-position="fixed" class="theme">
+				<a href="#home" data-icon="delete" >Close</a>
+				<h1>BVU</h1>
+			</div>
+
+			<div data-role="content">
+				<ul class="hmlist" data-role="listview" data-scroll="true">
+					<li><img src = images/food.png class="icon" width=80px height=60px><a href="#dinner"><h1>What's For Dinner?</h1></a></li>
+					<li><img src = images/ACES.png class="icon" width=80px height=60px><a href="#aces"><h1>ACES</h1></a></li>
+					<li><img src = images/news.png class="icon" width=80px height=60px><a href="#news"><h1>News</h1></a></li>
+					<li><img src = images/thetack.jpg><a href="#thetack" width=80px height=60px><h1>The Tack</h1></a></li>
+					<li><img src = images/CAE.jpg class="icon" width=80px height=60px><a href="#cae"><h1>CAE</h1></a></li>
+					<li><img src = images/academics.png class="icon" width=80px height=60px><a href="#academics"><h1>Academics</h1></a></li>
+					<li><img src = images/laundry.jpg><a href="#laundry" width=80px height=60px><h1>Laundry</h1></a></li>
+					<li><img src = images/buford.jpg class="icon" width=80px height=60px><a href="#events"><h1>Athletics</h1></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- CAE -->
+	<div data-role="page" id="cae">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>CAE</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+
+		</div>
+		<div data-role="content">
+				<ul class="hmlist" data-role="listview" data-scroll="true">
+					<li><a href="#appointment"><h1>Make An Appointment</h1></a></li>
+				</ul>		
+		</div>
+	</div>
+	
+	<div data-role="page" id="appointment">
+			<div data-role="header" data-position="fixed" id="launhead" class="theme">
+				<h1>Make an Appointment</h1>
+				<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			</div>
+			<div data-role="content">
+				<iframe src="http://web.bvu.edu/accuweb/" width=100% height=100% scrolling=yes></iframe>
+			</div>
+				
+		</div>
+	</div>
+
+	
+	<!-- The Tack Page -->
+	<div data-role="page" id="thetack">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>The Tack</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+
+		</div>
+		<div data-role="content">
+				<ul class="hmlist" data-role="listview" data-scroll="true">
+					<li><a href="#artslife"><h1>Arts & Life</h1></a></li>
+					<li><a href="#blogs"><h1>Blogs</h1></a></li>
+					<li><a href="#multimedia"><h1>Multimedia</h1></a></li>
+					<li><a href="#tacknews"><h1>News</h1></a></li>
+					<li><a href="#opinion"><h1>Opinion</h1></a></li>
+					<li><a href="#sports"><h1>Sports</h1></a></li>
+				</ul>		
+		</div>
+			
+	</div>
+	
+	<div data-role="page" id="artslife">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>The Tack</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" class="rssContent">
+				<header class="tackHeader">Arts & Life</header>
+			<div class="tackarts-container" ></div>	
+		</div>
+			
+	</div>
+	
+		<div data-role="page" id="blogs">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>The Tack</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" class="rssContent">
+			<header class="tackHeader">Blogs</header>
+			<div class="tackblogs-container" ></div>	
+		</div>
+			
+	</div>
+	
+	<div data-role="page" id="multimedia">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>The Tack</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" class="rssContent">
+			<header class="tackHeader">Multimedia</header>
+				
+			<div class="tackmultimedia-container" ></div>	
+		</div>	
+	</div>
+	
+		<div data-role="page" id="tacknews">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>The Tack</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" class="rssContent">
+			<header class="tackHeader">News</header>
+			<div class="tacknews-container" ></div>	
+		</div>
+			
+	</div>
+	
+	<div data-role="page" id="opinion">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>The Tack</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" class="rssContent">
+			<header class="tackHeader">Opinion</header>
+				
+			<div class="tackopinion-container" ></div>
+		</div>	
+	</div>
+	
+		<div data-role="page" id="sports">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>The Tack</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" class="rssContent">
+			<header class="tackHeader">Sports</header>
+				
+			<div class="tacksports-container" ></div>	
+		</div>
+			
+	</div>
+
+	<!-- Dinner Page -->
+	<div data-role="page" id="dinner">
+		<div data-role="header" data-position="fixed" id="launhead" class="theme">
+			<h1>What's For Dinner?</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" id="my-div">
+			<iframe id="dinframe" src="http://www.bvudining.com/WeeklyMenu_276.htm" width=100% height=100%></iframe>
+		</div>
+			
+	</div>
+	
+	<!-- Laundry Page -->
+	<div data-role="page" id="laundry">
+
+			<div data-role="header" data-position="fixed" id="launhead" class="theme">
+				<h1>Laundry</h1>
+				<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			</div>
+			<div data-role="content" id="my-div">
+				<iframe id="launframe" src="http://www.laundryalert.com/cgi-bin/bvu999/LMPage" width=100% height=100% scrolling=yes></iframe>
+			</div>
+				
+		</div>
+	</div>
+	
+	
+	<!-- Events Page -->
+	<div data-role="page" id="events">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>Athletics</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+			<div data-role="content" class="rssContent">
+			<div class="events-container" ></div>
+			</div>
+			
+	</div>
+	
+	<!-- Academics Page -->
+	<div data-role="page" id="academics">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>Academics</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+			<div data-role="content">
+				<ul align=center class="hmlist" data-role="listview" data-scroll="true">
+					<li><a href="#calendar"><h1>Academic Calendar</h1></a></li>
+					<li><a href="#majors"><h1>Majors</h1></a></li>
+					<li><a href="#minors"><h1>Minors</h1></a></li>			
+				</ul>		
+			</div>	
+	</div>
+	
+	<!-- Calendar -->
+	<div data-role="page" id="calendar">
+			<div data-role="header" data-position="fixed" id="launhead" class="theme">
+				<h1>Academic Calendar</h1>
+				<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			</div>
+			<div data-role="content" >
+				<iframe src="https://bvu.edu/mobile/academics/academic-calendar.dot" width=100% height=100% scrolling=yes></iframe>
+			</div>
+				
+		</div>
+	</div>
+	
+	<!-- Majors -->
+	<div data-role="page" id="majors">
+			<div data-role="header" data-position="fixed" id="launhead" class="theme">
+				<h1>Majors</h1>
+				<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			</div>
+			<div data-role="content" >
+				<iframe src="https://bvu.edu/mobile/academics/majors.dot" width=100% height=100% scrolling=yes></iframe>
+			</div>
+				
+		</div>
+	</div>
+	
+	<!-- Minors -->
+	<div data-role="page" id="minors">
+			<div data-role="header" data-position="fixed" id="launhead" class="theme">
+				<h1>Minors</h1>
+				<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			</div>
+			<div data-role="content" >
+				<iframe src="https://bvu.edu/mobile/academics/minors.dot" width=100% height=100% scrolling=yes></iframe>
+			</div>
+				
+		</div>
+	</div>
+	
+	
+	<!-- News Page -->
+	<div data-role="page" id="news">
+
+			<div data-role="header" data-position="fixed" class="theme">
+				<h1>News</h1>
+				<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			</div> 
+			<div data-role="content" class="rssContent">
+
+				<div class="news-container">
+			</div>
+			</div>	
+	</div> 
+		
+
+	<!-- ACES Page -->
+	<div data-role="page" id="aces">
+		<div data-role="header" data-position="fixed" class="theme">
+			<h1>ACES</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content">
+				<ul class="hmlist" data-role="listview" data-scroll="true">
+					<li><a href="#cultural"><h1>Cultural Events</h1></a></li>
+					<li><a href="#scholarly"><h1>Scholarly Events</h1></a></li>
+					<li><a href="#studentlife"><h1>Student Life Events</h1></a></li>
+					<li><a href="#status"><h1>Check Status</h1></a></li>
+				</ul>
+		</div>
+			
+	</div>
+		
+<div data-role="page" id="status">
+    <div data-role="header" data-position="fixed" id="launhead" class="theme">
+      <h1>Check Status</h1>
+	  	<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+    </div>
+    <div data-role="content" id="my-div">
+		<iframe src="http://www2.bvu.edu/departments/academicaffairs/aces/check.asp" width=100% height=100%></iframe>
+	</div>
+			
+  </div>
+  
+<div data-role="page" id="cultural">
+    <div data-role="header" data-position="fixed" id="launhead" class="theme">
+      <h1>Cultural Aces</h1>
+	  	<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+    </div>
+    <div data-role="content" id="my-div">
+		<iframe id="acesframe" src="http://www.bvu.edu/bv/aces/cultural-events.dot" width=100% height=100% ></iframe>
+	</div>
+			
+  </div>
+  
+  <div data-role="page" id="scholarly">
+    <div data-role="header" data-position="fixed" id="launhead" class="theme">
+      <h1>Scholarly Aces</h1>
+	  	<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+    </div>
+    <div data-role="content" id="my-div">
+		<iframe id="acesframe" src="http://www.bvu.edu/bv/aces/scholarly-events.dot" width=100% height=100%></iframe>
+	</div>
+			
+  </div>
+  
+  <div data-role="page" id="studentlife">
+    <div data-role="header" data-position="fixed" id="launhead" class="theme">
+      <h1>Student Life Aces</h1>
+	  	<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+    </div>
+    <div data-role="content" id="my-div">
+		<iframe id="acesframe" src="http://www.bvu.edu/bv/aces/student-life-events.dot" width=100% height=100%></iframe>
+	</div>
+			
+  </div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+		
+		.icon{
+		  	top: auto;
+		  	bottom:auto;
+		}
+		.theme { 
+			background: #002244; 
+			color: #fecb00;
+		}
+		body {
+			font-family: Arial;
+			background: #eee;
+		}
+		h1, h2{
+			margin-top:5px;
+			margin-bottom:0px;
+			text-align:center;
+		}
+		h3{
+			margin-top:5px;
+			margin-bottom:0px;
+			text-align:left;
+		}
+		header 
+		{
+			text-align:center;
+			font-weight:bold;
+			font-size:26px;
+			background-color:#fecb00;
+			color:#002244; 
+			padding:5px;
+			width:100%;
+			margin-right:auto;
+			margin-left:auto;
+		} 
+		.single-feed
+		{
+			text-align:left;
+			margin-right:auto;
+			margin-left:0px;
+			width:300px;
+		}
+		
+			body {
+				font-family: Arial;
+				background: #eee;
+			}
+			h1, h2{
+				margin-top:5px;
+				margin-bottom:0px;
+				text-align:center;
+			}
+			h3{
+				margin-top:5px;
+				margin-bottom:0px;
+				text-align:center;
+				background-color:#002244;
+				color:white;
+				text-shadow:0px 0px #fecb00;
+			}
+			#mainHeader 
+			{
+				text-align:center;
+				font-weight:bold;
+				font-size:26px;
+				background-color:#fecb00;
+				text-shadow:0px 0px #fecb00;
+				color:#002244; 
+				padding:5px;
+				width:100%;
+				margin-right:auto;
+				margin-left:auto;
+			}
+			.tackHeader
+			{
+				text-align:center;
+				font-weight:bold;
+				font-size:26px;
+				background-color:#a9b3bc;
+				text-shadow:0px 0px #fecb00;
+				color:#283c81; 
+				padding:5px;
+				width:100%;
+				margin-right:auto;
+				margin-left:auto;
+			}
+			.single-feed
+			{
+				text-align:left;
+				display:inline-block;
+				margin-right:auto;
+				margin-left:auto;
+				width:90%;
+			}
+			.date
+			{
+
+			font-size:14px;
+		}
+		p {
+			color: #ccc;
+			line-height: 1.5;
+		}
+		#page {
+			width: 100%;
+			height: 100%;
+		}
+		.panel {
+			display: none;
+			width: 90%;
+			padding: 20px;
+			background-color: #333;
+			color: #fff;
+			box-shadow: inset 0 0 5px 5px #222;
+		}
+			
+		#my-div
+		{
+		    width    : 700px;
+		    height   : 800px;
+		    overflow : hidden;
+		    position : relative;
+		}
+		#launframe
+		{
+		    position : absolute;    
+		    left     : -220px;
+		    width    : 100%;
+		    height   : 100%;
+		}
+		#dinframe
+		{
+		    position : absolute;	    
+		    left     : -250px;
+		    width    : 100%;
+		    height   : 100%;
+		}
+		#acesframe
+		{
+		    position : absolute;	
+		    top		 : -150px;    
+		    left     : -310px;
+		    width    : 100%;
+		    height   : 100%;
+		}
+		#homeContent
+		{
+			margin:0px;
+			padding:0px;
+		}
+
+		.box-shadow-menu {
+			  position: relative;
+			  padding-left: 1.25em;
+		}
+		.box-shadow-menu:before {
+			  content: "";
+			  position: absolute;
+			  left: 0.70em;
+			  top: 0.48em;
+			  width: 1.5em;
+			  height: 0.25em;
+			  background: white;
+			  box-shadow: 
+			    0 0.45em 0 0 white,
+			    0 0.8em 0 0 white;
+		}
+
+		.main-container{
+			width:	100%;
+    		margin: 0 auto;
+		}
+
+		.rssContent
+		{
+
+		padding:0px;
+   		 width: 100%;
+ 		 text-align: center;
+
+		}
+
+
+		
